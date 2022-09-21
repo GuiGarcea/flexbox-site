@@ -1,0 +1,307 @@
+:root{
+--marrom-color: #783a32;
+--bege-color: #8d7c5f;
+--preto-color: #000;
+--branco-color: #fff;
+--cinza-color: #8d8d8d;
+--tomato-color: tomato;
+
+--posicao-padding: 20px 50px;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+  height: 17px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #383838;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #863687;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #9a377f;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 34px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+body{
+    font-family: roboto, arial, verdana;
+}
+
+.ajuste-flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover{opacity: 1;}
+
+header{
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--posicao-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 350px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+header li a{
+    color: var(--bege-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+header li a:hover{color: #783a32}
+
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+.temporada{
+    background-image: url(../img/The-Walking-Dead-1-Temporada.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: var(--branco-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temporada h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 900;
+}
+.temporada h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 200;
+}
+
+.temporada .btn{
+    background-color: var(--branco-color);
+    border-radius: 4px;
+    color: var(--preto-color);
+    padding: var(--posicao-padding);
+    text-transform: uppercase;
+}
+
+.mortes, .contato{
+    background-color: var(--preto-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.mortes h3, .epsodio h3, .contato h3{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--marrom-color);
+    font-family: Oswald, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.mortes p, .epsodio p, .contato p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: var(--branco-color);
+    text-align: center;
+}
+
+.epsodio h3, .epsodio p{
+    color: var(--preto-color);
+}
+
+
+.mortes hr, .epsodio hr, .contato hr{
+    width: 200px;
+    height: 1px;
+    background-color: var(--branco-color);
+    margin-bottom: 70px;
+    border: none;
+}
+
+.epsodio hr{
+    background-color: var(--preto-color);
+}
+
+
+
+.mortes .grid, .epsodio .grid {
+    width: 100%;
+    display: flex;
+}
+
+.epsodio .grid{
+    flex-wrap: wrap;
+}
+
+.mortes .grid li{
+    padding: 0 30px;
+    text-align: center;
+}
+
+.mortes .grid span{
+    color: var(--tomato-color);
+    margin-bottom: 30px;
+    font-size: 5.2rem;
+}
+
+.mortes .grid h4{
+    color: var(--marrom-color);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-family: Oswald, Arial, sans-serif;
+}
+
+.epsodio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.epsodio .grid li{
+    height: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box
+}
+
+.epsodio .grid .small{
+    /* width: 40%; */
+    flex-basis: 40%;
+}
+
+.epsodio .grid .large{
+    /* width: 60%; */
+    flex-basis: 60%;
+}
+
+.contato form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.contato input{
+    padding: 15px;
+    border: 1px solid var(--preto-color);
+    border-radius: 4px;
+    margin-right: 2px;
+    flex: 1;
+}
+
+.contato button{
+    padding: 15px;
+    background-color: #var(--cinza-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0 4px 4px 0;
+    color: var(--branco-color);
+}
+
+@keyframes myAnim {
+	0% {
+		background-position: right top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: right top;
+		background-size: 150%;
+	}
+}
+
+footer{
+    background-image: url(../img/banner_historia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    animation: myAnim 5s ease 0s infinite reverse none;
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer li{
+    margin-right: 25px;
+}
+
+footer li:first-child{
+    margin-left: 0;
+}
+
+footer li:last-child{
+    margin-right: 0;
+}
+
+footer ul a{
+    color: var(--preto-color);
+}
+
+footer .lista-rede li a span{
+    font-size: 3rem;
+}
+
+footer p{
+    color: var(--preto-color);
+    text-align: center;
+}
+
